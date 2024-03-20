@@ -1,0 +1,36 @@
+{% layout "base" %}
+{% block content %}
+
+<p style="font-size: 1.5em;">
+    You have been invited to join <i>{{ projectName }}</i> by {{ user }} . Please click the link below to accept this invitation and join the project:
+</p>
+
+<p style="text-align: center; padding: 20px 0;align-items: center;">
+    <h2 style="width:98vw; text-align: center; font-size: 1.8em;">This is your pin</h2>
+    <div style="max-width: 27vw; background-color:#4403ad; color:white; padding:10px; text-align: center; margin:auto;">
+     <h2 style="font-size: 2em;">{{ pin }}</h2>
+    </div>
+    <div class="myButton">
+        <a style="color: #4403ad" href="{{ url }}"><i>{{ projectName }}</i></a>
+    </div>
+    <div style="text-align: center; padding-top: 10px">
+        <span style="color: red; width:100vw; font-size: 1.5em;">The invitation pin is valid only for 24 hours!</span>
+    </div>
+</p>
+
+<p style="text-align: center; padding: 20px 0;align-items: center;">
+    If the invitation pin expired, you can request a new invitation by contacting the person who invited you.
+</p>
+
+<p style="font-size: 1vw;">
+    Thank you,<br>
+    The {{ projectName }} Team
+</p>
+<style>
+    .myButton {
+    margin-top:20px;
+    font-size: 2em;
+    text-align: center;
+}
+</style>
+{% endblock %}

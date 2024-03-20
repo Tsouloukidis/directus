@@ -1,0 +1,24 @@
+{% layout "base" %}
+{% block content %}
+
+<p style="font-size: 1.5em;">
+    The {{ projectName }} team sents you a pin for your registration:
+</p>
+
+<p style="text-align: center; padding: 20px 0;align-items: center;">
+    <h2 style="width:98vw; text-align: center; font-size: 1.8em;">This is your pin</h2>
+    <div style="max-width: 27vw;background-color:#4403ad; color:white; padding:10px; text-align: center; margin:auto;">
+     <h2 style="font-size: 2em;">{{ pin }}</h2>
+    </div>
+    <div style="text-align: center; padding-top: 10px">
+        <span style="color: red; width:100vw; font-size: 1.5em;">The pin is valid only for 5 minutes!</span>
+    </div>
+    
+</p>
+
+<p style="font-size: 1.5em;">
+    Thank you,<br>
+    The {{ projectName }} Team
+</p>
+
+{% endblock %}
